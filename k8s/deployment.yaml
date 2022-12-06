@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: solar-system
+  labels:
+    app: solar-system
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: solar-system
+      labels:
+        app: solar-system
+    spec:
+      containers:
+        - name: solar-system
+          image: ridaa/solar-system:1
+          imagePullPolicy: Always
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: solar-system
