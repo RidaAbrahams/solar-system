@@ -13,6 +13,6 @@ public class PlanetsResource {
 
     @GET
     public Response getAll() {
-        return Response.ok(Collections.singletonMap("Planets v3", "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto")).build();
+        return Response.ok(Collections.singletonMap("Planets v4", "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto")).build();
     }
 }

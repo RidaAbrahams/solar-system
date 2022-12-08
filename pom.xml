@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>za.co.sar</groupId>
   <artifactId>solar-system</artifactId>
-  <version>3</version>
+  <version>4</version>
   <properties>
     <compiler-plugin.version>3.8.1</compiler-plugin.version>
     <maven.compiler.release>11</maven.compiler.release>
