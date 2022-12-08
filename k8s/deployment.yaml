@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: solar-system
-          image: ridaa/solar-system:4
+          image: ridaa/solar-system:5
           imagePullPolicy: Always
       restartPolicy: Always
   selector:
