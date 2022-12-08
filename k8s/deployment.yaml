@@ -14,9 +14,10 @@ spec:
     spec:
       containers:
         - name: solar-system
-          image: ridaa/solar-system:8
+          image: ridaa/solar-system:9
           imagePullPolicy: Always
       restartPolicy: Always
+      serviceAccountName: solar-system
   selector:
     matchLabels:
       app: solar-system
