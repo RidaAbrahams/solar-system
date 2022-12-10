@@ -26,6 +26,6 @@ public class PlanetsResource {
     @GET
     @Path("info")
     public Response getInfo() {
-        return Response.ok(Collections.singletonMap("System information", "Solar system v9")).build();
+        return Response.ok(Collections.singletonMap("System information", "Solar system v1.0.0")).build();
     }
 }

@@ -51,3 +51,9 @@ If you want to learn more about building native executables, please consult http
 
 - RESTEasy Classic JSON-B ([guide](https://quarkus.io/guides/rest-json)): JSON-B serialization support for RESTEasy Classic
 - SmallRye OpenAPI ([guide](https://quarkus.io/guides/openapi-swaggerui)): Document your REST APIs with OpenAPI - comes with Swagger UI
+
+## Connecting to the Postgres DB running in a K8s pod
+kubectl exec -it pod/postgres-xxxxxxxxxx -- psql -h localhost -U quarkus_banking --
+password -p 5432 solar_system
+
+Be sure to change the pod name to the pod in which the postgres db is actually running in at the time.
